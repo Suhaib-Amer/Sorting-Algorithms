@@ -1,4 +1,3 @@
-@@ -1,2 +1,22 @@
 # Sorting-Algorithms
 This repository contains my learning progress for Sorting Algorithms
 # Sorting Algorithms in C
@@ -14,6 +13,7 @@ Each algorithm is implemented in its own file for clarity, along with a `test.c`
 - `bubble_sort.c` → Implementation of **Bubble Sort** (with optimization).
 - `insertion_sort.c` → Implementation of **Insertion Sort**.
 - `test.c` → A menu-driven program that lets you input an array and choose which sorting algorithm to apply.
+- `Merge_Sort.c` → Implementation of **Merge Sort**.
 
 ---
 
