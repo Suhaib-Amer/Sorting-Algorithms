@@ -1,26 +1,25 @@
-📂 Files
-Selection_Sort.c → Implementation of Selection Sort (minimum-based).
+@@ -1,2 +1,22 @@
+# Sorting-Algorithms
+This repository contains my learning progress for Sorting Algorithms
+# Sorting Algorithms in C
 
-max_selection_sort.c → Implementation of Selection Sort (maximum-based).
+This repository contains implementations of classic sorting algorithms in C.  
+Each algorithm is implemented in its own file for clarity, along with a `test.c` file to demonstrate usage.
 
-bubble_sort.c → Implementation of Bubble Sort (with optimization).
+---
 
-insertion_sort.c → Implementation of Insertion Sort.
+## 📂 Files
+- `Selection_Sort.c` → Implementation of **Selection Sort** (minimum-based).
+- `max_selection_sort.c` → Implementation of **Selection Sort** (maximum-based).
+- `bubble_sort.c` → Implementation of **Bubble Sort** (with optimization).
+- `insertion_sort.c` → Implementation of **Insertion Sort**.
+- `test.c` → A menu-driven program that lets you input an array and choose which sorting algorithm to apply.
 
-merge_sort.c → Implementation of Merge Sort (recursive, divide-and-conquer).
+---
 
-test.c → Menu-driven program to input an array and select a sorting algorithm.
-
-🚀 How to Run
-Clone the repository or download the files.
-
-Compile any file you wish to test. For example:
-
-bash
-gcc Selection_Sort.c -o selection
-./selection
-To run Merge Sort:
-
-bash
-gcc merge_sort.c -o merge
-./merge
+## 🚀 How to Run
+1. Clone the repository or download the files.
+2. Compile any file you want to test. For example:
+   ```bash
+   gcc Selection_Sort.c -o selection
+   ./selection
