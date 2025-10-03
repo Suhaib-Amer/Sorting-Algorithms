@@ -3,7 +3,9 @@
     void SelectionSort(int arr[],int n);
     void BubbleSort(int arr[],int n);
     void InsertionSort(int arr[],int n);
-
+    void Merge(int a[],int low,int mid,int high);
+    void MergeSort(int a[],int low,int high);
+    
     void SelectionSort(int arr[],int n){
     int i,j,temp;
     for(i=0;i<n-1;i++){
@@ -52,6 +54,49 @@
         }
     }
 
+    void Merge(int a[],int low,int mid,int high){
+    int size=high-low+1;
+    int temp[size];
+    
+    int left=low;
+    int right=mid+1;
+    int k=0;
+
+    while(left<=mid&&right<=high){
+        if(a[left]<=a[right]){
+            temp[k++]=a[left++];
+        }
+        else{
+            temp[k++]=a[right++];
+        }
+    }
+
+    while(left<=mid){
+        temp[k++]=a[left++];
+    }
+
+    while(right<=high){
+        temp[k++]=a[right++];
+    }
+
+    for(int i=low;i<=high;i++){
+        a[i]=temp[i-low];
+    }
+
+}
+
+
+
+
+void MergeSort(int a[],int low,int high){
+if(low>=high) return;
+
+int mid=(low+high)/2;
+MergeSort(a,low,mid);
+MergeSort(a,mid+1,high);
+Merge(a,low,mid,high);
+}
+
     int main(){
         int a[20],i,n,choice;
         printf("Enter the number of elements you want to store in the array\n");
@@ -73,6 +118,7 @@
         printf("1.Selection Sort\n");
         printf("2.Bubble Sort\n");
         printf("3.Insertion Sort\n");
+        printf("4.Merge Sort\n");
         scanf("%d",&choice);
         switch(choice){
         
@@ -86,6 +132,10 @@
 
             case 3:
             InsertionSort(a,n);
+            break;
+
+            case 4:
+            MergeSort(a,0,n-1);
             break;
 
             default:
