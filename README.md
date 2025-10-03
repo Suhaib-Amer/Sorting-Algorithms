@@ -15,7 +15,7 @@ insertion_sort.c → Implementation of Insertion Sort.
 
 merge_sort.c → Implementation of Merge Sort (divide and conquer).
 
-test.c → A menu-driven program that lets you input an array and choose which sorting algorithm to apply.
+test.c → A menu-driven program that allows you to input an array and choose which sorting algorithm to apply.
 
 🚀 How to Run
 
@@ -37,11 +37,14 @@ gcc merge_sort.c -o merge
 ./merge
 
 
-For the menu-driven program (test.c), compile and run:
+To run the menu-driven program (test.c):
 
 gcc test.c -o test
 ./test
 
 
-You will be prompted to enter the array size, the elements, and select a sorting algorithm.
-The program will then display the array before and after sorting.
+You will be prompted to enter the size of the array and the elements.
+
+Then choose a sorting algorithm from the menu.
+
+The program will display the array before and after sorting.
