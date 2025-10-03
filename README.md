@@ -1,32 +1,28 @@
-Sorting Algorithms in C
+Sorting Algorithms in C 🌀
 
-This repository contains implementations of classic sorting algorithms in C.
-Each algorithm is implemented in its own file for clarity, along with a test.c file to demonstrate usage.
+This repository contains classic sorting algorithms implemented in C.
+Each algorithm is implemented in its own file for clarity, along with a menu-driven program (test.c) to demonstrate usage.
 
 📂 Files
 
-Selection_Sort.c → Implementation of Selection Sort (minimum-based).
+Selection_Sort.c → Selection Sort (minimum-based)
 
-max_selection_sort.c → Implementation of Selection Sort (maximum-based).
+max_selection_sort.c → Selection Sort (maximum-based)
 
-bubble_sort.c → Implementation of Bubble Sort (with optimization).
+bubble_sort.c → Bubble Sort (optimized)
 
-insertion_sort.c → Implementation of Insertion Sort.
+insertion_sort.c → Insertion Sort
 
-merge_sort.c → Implementation of Merge Sort (divide and conquer).
+merge_sort.c → Merge Sort (divide & conquer)
 
-test.c → A menu-driven program that allows you to input an array and choose which sorting algorithm to apply.
+test.c → Menu-driven program for testing all sorting algorithms
 
 🚀 How to Run
-
-Clone the repository or download the files:
-
+1️⃣ Clone the repository
 git clone <repository-url>
 cd <repository-folder>
 
-
-Compile any file you want to test. For example:
-
+2️⃣ Compile a specific algorithm
 gcc Selection_Sort.c -o selection
 ./selection
 
@@ -36,15 +32,15 @@ Or for Merge Sort:
 gcc merge_sort.c -o merge
 ./merge
 
-
-To run the menu-driven program (test.c):
-
+3️⃣ Run the menu-driven program
 gcc test.c -o test
 ./test
 
 
-You will be prompted to enter the size of the array and the elements.
+Enter the size of the array
 
-Then choose a sorting algorithm from the menu.
+Input the array elements
 
-The program will display the array before and after sorting.
+Choose a sorting algorithm
+
+The program will display the array before and after sorting
